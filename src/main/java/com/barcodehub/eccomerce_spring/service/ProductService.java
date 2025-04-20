@@ -2,6 +2,7 @@ package com.barcodehub.eccomerce_spring.service;
 
 import com.barcodehub.eccomerce_spring.model.Product;
 import com.barcodehub.eccomerce_spring.repository.ProductRepository;
+import com.barcodehub.eccomerce_spring.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -29,7 +30,7 @@ public class ProductService {
 
     public Product updateProduct(Long id, Product productDetails) {
         Product existingProduct = productRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Product not found with id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Product not found with id: " + id));
 
         // Actualizar solo campos no nulos del productDetails
         if (productDetails.getName() != null) {
