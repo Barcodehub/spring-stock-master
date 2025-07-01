@@ -1,4 +1,4 @@
-package com.barcodehub.eccomerce_spring.model;
+package com.barcodehub.eccomerce_spring.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

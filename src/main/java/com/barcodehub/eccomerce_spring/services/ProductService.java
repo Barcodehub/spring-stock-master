@@ -1,6 +1,6 @@
-package com.barcodehub.eccomerce_spring.service;
+package com.barcodehub.eccomerce_spring.services;
 
-import com.barcodehub.eccomerce_spring.model.Product;
+import com.barcodehub.eccomerce_spring.models.Product;
 import com.barcodehub.eccomerce_spring.repository.ProductRepository;
 import com.barcodehub.eccomerce_spring.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;

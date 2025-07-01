@@ -1,7 +1,7 @@
 package com.barcodehub.eccomerce_spring.controller;
 
-import com.barcodehub.eccomerce_spring.model.Product;
-import com.barcodehub.eccomerce_spring.service.ProductService;
+import com.barcodehub.eccomerce_spring.models.Product;
+import com.barcodehub.eccomerce_spring.services.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
